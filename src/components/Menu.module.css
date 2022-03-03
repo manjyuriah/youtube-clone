@@ -1,0 +1,86 @@
+.menu {
+    position: fixed;
+    width: 240px;
+    top: 56px;
+    padding: 0 0px 12px 0;
+    box-sizing: border-box;
+  }
+  .Logomenu{
+    width: 100px;
+    position: fixed;
+    top: 56px;
+    padding: 0 0 12px 0;
+    box-sizing: border-box;
+  }
+  .link {
+    display: flex;
+    height: 40px;
+    padding: 0 24px;
+    background-color: white;
+    color: black;
+    font-size: 14px;
+    text-decoration: none;
+    align-items: center;
+  }
+  .LogoLink{
+    display: flex;
+    padding: 16px;
+    padding-left: 32px;
+    background-color: white;
+    color: black;
+    align-items: center;
+    flex-direction: column;
+  }
+  .link:hover,  .LogoLink:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+  .LogoLink .text,  .LogoFocused .text{
+    font-size: 12px;
+    margin: 10px 0 0 -20px;
+  }
+  .icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 24px;
+  }
+  .focused {
+    display: flex;
+    height: 40px;
+    padding: 0 24px;
+    background-color: rgba(0, 0, 0, 0.1);
+    color: black;
+    font-size: 14px;
+    text-decoration: none;
+    align-items: center;
+  }
+  .LogoFocused {
+    display: flex;
+    font-size: 12px;
+    padding: 16px;
+    padding-left: 32px;
+    background-color: rgba(0, 0, 0, 0.1);
+    color: black;
+    align-items: center;
+    flex-direction: column;
+  }
+  .focused:hover{
+    background-color: rgba(0, 0, 0, 0.15);
+  }
+  @media screen and (max-width: 911px) {
+    .text {
+      display: none;
+    }
+    .menu {
+      width: 72px;
+      padding: 0;
+    }
+    .link {
+      height: 72px;
+    }
+    .focused {
+      height: 72px;
+    }
+    .icon {
+      margin: 0;
+    }
+  }

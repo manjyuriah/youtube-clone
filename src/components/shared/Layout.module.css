@@ -1,0 +1,31 @@
+.container {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: auto;
+    flex-direction: column;
+  }
+  .layout {
+    display: flex;
+    margin-top: 56px;
+    flex: 1;
+  }
+  .contents {
+    margin-left: 240px;
+    padding: 0 50px 0px 0;
+    box-sizing: border-box;
+    flex: 1;
+  }
+  .setContents {
+    width: 100%;
+    margin-left: 90px;
+    padding: 0px 50px 0px 10px;
+  }
+  @media screen and (max-width: 911px) {
+    .contents {
+      margin-left: 72px;
+    }
+  }
